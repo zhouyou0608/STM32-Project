@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"led_kz\startup_stm32f103xb.o"
+"led_kz\main.o"
+"led_kz\gpio.o"
+"led_kz\stm32f1xx_it.o"
+"led_kz\stm32f1xx_hal_msp.o"
+"led_kz\stm32f1xx_hal_gpio_ex.o"
+"led_kz\stm32f1xx_hal_tim.o"
+"led_kz\stm32f1xx_hal_tim_ex.o"
+"led_kz\stm32f1xx_hal.o"
+"led_kz\stm32f1xx_hal_rcc.o"
+"led_kz\stm32f1xx_hal_rcc_ex.o"
+"led_kz\stm32f1xx_hal_gpio.o"
+"led_kz\stm32f1xx_hal_dma.o"
+"led_kz\stm32f1xx_hal_cortex.o"
+"led_kz\stm32f1xx_hal_pwr.o"
+"led_kz\stm32f1xx_hal_flash.o"
+"led_kz\stm32f1xx_hal_flash_ex.o"
+"led_kz\stm32f1xx_hal_exti.o"
+"led_kz\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "LED_KZ\LED_KZ.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LED_KZ.map" -o LED_KZ\LED_KZ.axf
